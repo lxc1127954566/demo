@@ -26,7 +26,7 @@
     </select>
 
     <update id="updataUser" parameterType="com.cpy.userdboperation.pojo.User">
-        UPDATE task.user SET userName=#{userName}, sex=#{sex}, birthday=#{birthday}, numberId=#{numberId}, mobilePhone=#{mobilePhone}, email=#{email}, qq=#{qq}, weChat=#{weChat}, academicCareer=#{academicCareer}, birthplace=#{birthplace}, nowPlace=#{nowPlace}, company=#{company}, updateDate=SYSDATE() WHERE userId = #{userId}
+        UPDATE task.user SET userName=#{userName}, sex=#{sex}, birthday=#{birthday}, mobilePhone=#{mobilePhone}, email=#{email}, qq=#{qq}, weChat=#{weChat}, academicCareer=#{academicCareer}, birthplace=#{birthplace}, nowPlace=#{nowPlace}, company=#{company}, updateDate=SYSDATE() WHERE userId = #{userId}
     </update>
 
     <update id="updataPassWord" parameterType="com.cpy.userdboperation.encapsulation.EncapPostPwd">
